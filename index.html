@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Мальвина</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+        <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/main/css/layout.css">
+    <link rel="stylesheet" href="assets/main/css/violet.css">
+
+    <!-- Flexslider-->
+   <!--  <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css"> -->
+
+
+    <!-- Bootstrap Social -->
+   <!--  <link rel="stylesheet" href="assets/plugins/bootstrap-social/bootstrap-social.css"> -->
+
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+   <!--  <link rel="stylesheet" href="assets/plugins/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.css"> -->
+
+    <!-- Bootstrap Select -->
+    <!-- <link rel="stylesheet" href="assets/plugins/bootstrap-select/dist/css/bootstrap-select.css"> -->
+    <!-- Bootstrap DatePicker -->
+   <!--  <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.css"> -->
+
+
+</head>
+    <div class="wrapper wide-wrapper">
+        <div id="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="header-top-left">
+                                <li><a><i class="fa fa-phone"></i> <a href="tel:+7 951 275 04 29">Позвоните нам</a></a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="account-top-menu">
+                                <li><a href="signup.html">Регистрация</a></li>
+                                <li class="signin-dropdown">
+                                    <a href="signin.php" >Войти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-navbar">
+                <div class="navbar main-navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-responsive-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <div class="logo">
+                                    <br>
+                                    <img src="img/223.png" width="250" vertical-align  class="img-responsive hidden-xs">
+                                    <img src="assets/main/img/general/small-logo.png" alt=""
+                                        class="img-responsive mini-logo hidden-lg hidden-sm hidden-md">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse navbar-responsive-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="index.html">Главная</a></li>
+                                <li>
+                                    <a href="#">Приём детей <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="room_list.html">Архив приказов</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Безопасность <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="book_new.html">Дорожная безопасность</a></li>
+                                        <li><a href="book_new.html">Информационная безопасность</a></li>
+                                        <li><a href="book_new.html">Пожарная безопасность</a></li>
+                                        <li><a href="book_confirmation.html">Безопасность на воде</a></l>
+                                        <li><a href="book_new.html">Экологическая безопасность</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="404.html">Охрана труда </a>
+                                
+                                </li>
+                                <li>
+                                    <a href="#">Обратная связь <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="post_list.html">Личный прием граждан</a></li>
+                                        <li><a href="post_grid.html">Обратная связь</a></li>
+                                        <li><a href="post_single.html">Отзывы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">О Нас <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="gallery.html">Основные сведения</a></li>
+                                        <li><a href="gallery_detail.html">Видео</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="facilities-section">
+            <div class="facilities-overlay">
+                <div class="container">
+                    <div class="facilities-inner">
+                        <h2 class="big-title white-text text-center">Важная информация</h2>
+                        <div class="tab-wrapper">
+                            <ul role="tablist" class="nav nav-tabs" id="myTabs">
+                                <li class="active"><a data-toggle="tab" role="tab" id="restaurant-tab"
+                                        href="#restaurant"></i><span
+                                            class="hidden-xs">COVID-19</span></a></li>
+                                <li class=""><a data-toggle="tab" id="sport-tab" role="tab" href="#sport"
+                                        aria-expanded="false"></i><span
+                                            class="hidden-xs">Кружки</span></a></li>
+                                <li class=""><a data-toggle="tab" id="bar-tab" role="tab" href="#bar"
+                                        aria-expanded="false"></i><span
+                                            class="hidden-xs">9 Мая</span></a></li>
+                                <li class=""><a data-toggle="tab" id="hall-tab" role="tab" href="#hall"
+                                        aria-expanded="false"></i><span
+                                            class="hidden-xs">COVID-19</span></a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div id="restaurant" class="tab-pane fade active in">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-5">
+                                            <img src="img/cvd.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-8 col-sm-7">
+                                            <a href="https://rospotrebnadzor.ru/about/info/news_time/news_details.php?ELEMENT_ID=13566">
+                                                <h3>Достоверно о COVID-19</h3><br>
+                                            </a>
+                                            <p>• Чаще мойте руки с мылом</p>
+                                            <p>• Соблюдайте дистанцию не менее 1,5 метра при контакте с людьми</p>
+                                            <p>• Ведите здоровый образ жизни</p>
+                                            <p>• Защищайте органы дыхания с помощью респиратора с классом защиты FFP3</p>
+                                            <p>• Обрабатывайте руки антисептическими средствами</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="sport" class="tab-pane fade">
+                                    <div class="row">
+                                       <div class="col-md-4 col-sm-5">
+                                            <img src="img/krujok.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-8 col-sm-7">
+                                             <a href="СТРАНИЦА САЙТА С ЗАПИСЬЮ НА КРУЖОК ( ФОРМА ОБРАТНОЙ СВЯЗИ )">
+                                                <h3>Доступные кружки</h3><br>
+                                            </a>
+                                            <p>• Кружок по экологическому развитию  «Лесовичок»</p>
+                                            <p>• Психологический кружок  «Я стану сильным»</p>
+                                            <p>• Кружок  по коррекции звукопроизношения  «Непоседа язычок»</p>
+                                            <p>• Кружок по духовно- нравственному развитию детей  «Дорогою добра»</p>
+                                            <p>• Кружок  по нетрадиционной технике рисования «Волшебная кисточка»</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bar" class="tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-5">
+                                            <img src="img/polk.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-8 col-sm-7">
+                                                <h3>Дистанционный бессмертный полк</h3><br>
+                                            </a>
+                                            <p>«Бессмертный полк» — это всенародная память о наших предках, о тех, кто шел дорогами войны. И даже в сложившихся условиях в наших силах сделать так, чтобы он по-прежнему оставался бессмертным!</p>
+                                            <p>Всем кто желает стать участником необходимо отправить фотографию ребенка с портретом ветерана на электронную почту детского сада
+                                                  <title>Адрес электронной почты</title>
+                                                    <p><a href="mailto:renovatio.clay@gmail.com">renovatio.clay@gmail.com</a></p> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="hall" class="tab-pane fade">
+                                    <div class="row">
+                                       <div class="col-md-4 col-sm-5">
+                                            <img src="img/cvd.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-8 col-sm-7">
+                                            <a href="https://rospotrebnadzor.ru/about/info/news_time/news_details.php?ELEMENT_ID=13566">
+                                                <h3>Достоверно о COVID-19</h3><br>
+                                            </a>
+                                            <p>• Чаще мойте руки с мылом</p>
+                                            <p>• Соблюдайте дистанцию не менее 1,5 метра при контакте с людьми</p>
+                                            <p>• Ведите здоровый образ жизни</p>
+                                            <p>• Защищайте органы дыхания с помощью респиратора с классом защиты FFP3</p>
+                                            <p>• Обрабатывайте руки антисептическими средствами</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="widgets-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="widget-title">Предстоящие мероприятия</h3>
+                        <div class="widget">
+                            <div class="events">
+                                <div class="event-item">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <div class="event-date">
+                                                <span>25</span>
+                                                 октября
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-8">
+                                            <div class="event-description">
+<!--                                                 <a href="post_single.html">
+ -->                                                    <h3>Танец </h3>
+                                                </a>
+                                                <p>Танцевальное выступление</p>
+                                            </div>
+                                            <div class="event-countdown">
+                                                <ul class="countdown">
+                                                    <li><span class="days">25</span> Д</li>
+                                                    <li><span class="hours">18</span> ч</li>
+                                                    <li><span class="minutes">00</span> М</li>
+                                                    <li><span class="seconds">00</span> с</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <div class="event-date">
+                                                <span>13</span>
+                                                декабря
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-8">
+                                            <div class="event-description">
+<!--                                                 <a href="post_single.html">
+ -->                                                    <h3>Фотосессия</h3>
+                                                </a>
+                                                <p>Праздничные фото к новому году</p>
+                                            </div>
+                                            <div class="event-countdown">
+                                                <ul class="countdown">
+                                                    <li><span class="days">200</span> Д</li>
+                                                    <li><span class="hours">15</span> ч</li>
+                                                    <li><span class="minutes">30</span> М</li>
+                                                    <li><span class="seconds">00</span> с</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-item">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <div class="event-date">
+                                                <span>30</span>
+                                                декабря
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-8">
+                                            <div class="event-description">
+<!--                                                 <a href="post_single.html"> -->
+                                                    <h3>Новый Год!</h3>
+                                                </a>
+                                                <p>Празднование Нового Года!</p>
+                                            </div>
+                                            <div class="event-countdown">
+                                                <ul class="countdown">
+                                                    <li><span class="days">235</span> Д</li>
+                                                    <li><span class="hours">18</span> ч</li>
+                                                    <li><span class="minutes">00</span> М</li>
+                                                    <li><span class="seconds">00</span> с</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="widget-title">Новости</h3>
+                        <div class="widget">
+                            <div class="widget-news">
+                                <ul>
+                                    <li>
+                                        <div class="widget-news-item">
+                                            <img class="img-responsive" alt="" src="img/put.jpg">
+                                            <div class="widget-news-title">
+                                                <a href="post_single.html">
+                                                    <h3>Президент проводит совещание о возможном продлении режима самоизоляции в связи с распространением коронавирусной инфекции.</h3>
+                                                </a>
+                                                <span class="published-date"><i class="fa fa-clock-o"></i> 12 мая
+                                                    2020 г.</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget-news-item">
+                                            <img class="img-responsive" alt="" src="img/covid.jpg">
+                                            <div class="widget-news-title">
+                                                <a href="post_single.html">
+                                                    <h3>На момент публикации этой новости в России официально объявлено о 221 344 случаях заболевания коронавирусом COVID-19 (в 85 регионах). Выздоровели уже 39 801 человек. Официально зарегистрировано 2009 летальных исходов.</h3>
+                                                </a>
+                                                <span class="published-date"><i class="fa fa-clock-o"></i> 11 мая
+                                                    2020 г.</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget-news-item">
+                                            <img class="img-responsive" alt="" src="img/9may.jpg">
+                                            <div class="widget-news-title">
+                                                <a href="post_single.html">
+                                                    <h3>Пандемия коронавируса внесла свои коррективы в празднование Дня Победы в этом году. Основные акции, посвященные 75-летию Великой Победы, проходят в новом формате, но своей значимости они от этого не теряют. </h3>
+                                                </a>
+                                                <span class="published-date"><i class="fa fa-clock-o"></i> 9 мая
+                                                    2020 г.</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+       
+<!-- Подвал -->
+        <section id="footer">
+            <div class="main-footer">
+                <div class="container">
+                    <div class="main-footer-inner">
+                        <div class="copyright">
+                          bfclay  © 2020 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <a id="toTop" href="#" class="btn-back-top btn-custom" data-toggle="tooltip" data-placement="top" title="Вверх"><i
+            class="fa fa-angle-up"></i></a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/plugins/jquery/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="assets/plugins/flexslider/jquery.flexslider.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="assets/plugins/smartmenus/jquery.smartmenus.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="assets/plugins/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js">
+    </script>
+    <!-- Shuffle Plugin-->
+    <script src="assets/plugins/shuffle/jquery.shuffle.min.js"></script>
+    <script src="assets/main/js/shuffle_init.js"></script>
+    <!-- CountDown -->
+    <script src="assets/plugins/countdown/jquery.countdown.js"></script>
+
+    <!-- Bootstrap Select -->
+    <script src="assets/plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+   
+</body>
+</html>

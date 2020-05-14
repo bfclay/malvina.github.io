@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ami Адаптивный шаблон HTML 5 для гостиниц, отелей, хостелов и гостевых домов">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ami Адаптивный шаблон HTML 5 для гостиниц, отелей, хостелов и гостевых домов</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,700,800,600,400,300&amp;latin"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet"
+        type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,500italic,400italic,300italic,300,100italic,100"
+        rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Flexslider-->
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+
+    <!-- OWl Carousle-->
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.theme.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap Social -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-social/bootstrap-social.css">
+
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link rel="stylesheet" href="assets/plugins/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.css">
+
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-select/dist/css/bootstrap-select.css">
+
+    <!-- Bootstrap DatePicker -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.css">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/main/css/layout.css">
+    <link rel="stylesheet" href="assets/main/css/orange.css" id="color-theme">
+    <link rel="stylesheet" href="assets/main/css/style-option.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div id="style-option-wrapper" class="style-option hidden-xs">
+        <a href="#" id="style-option-button" class="btn-custom"><i class="fa fa-cogs"></i></a>
+        <div class="style-option-inner">
+            <h3 class="btn-custom">Ami - Стиль </h3>
+            <div class="option-panel">
+                <form class="form-horizontal">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Макет</label>
+                            <select class="form-control" id="option-layout">
+                                <option value="">-- Выбрать --</option>
+                                <option value="boxed-wrapper">Заполнить</option>
+                                <option value="wide-wrapper">Растянуть</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Цвет</label>
+                            <div class="colors">
+                                <span class="color-switch">
+                                    <a title="Красный" class="color-button color-red" id="assets/main/css/red.css"
+                                        href="#">Красный</a>
+                                    <a title="Фиолетовый" class="color-button color-violet"
+                                        id="assets/main/css/violet.css" href="#">Фиолетовый</a>
+                                    <a title="Синий" class="color-button color-blue" id="assets/main/css/blue.css"
+                                        href="#">Синий</a>
+                                    <a title="Салатный" class="color-button color-green" id="assets/main/css/green.css"
+                                        href="#">Салатный</a>
+                                    <a title="Зеленый" class="color-button color-tosca" id="assets/main/css/bottle.css"
+                                        href="#">Зеленый</a>
+                                    <a title="Оранжевый" class="color-button color-orange"
+                                        id="assets/main/css/orange.css" href="#">Оранжевый</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p>
+                    <a href="index.html">По умолчанию</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper wide-wrapper">
+        <div id="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="header-top-left">
+                                <li><a href="#"><i class="fa fa-phone"></i> +7 987 654 33 21</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> ami@email.ru</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="account-top-menu">
+                                <li><a href="signup.html">Регистрация</a></li>
+                                <li class="signin-dropdown">
+                                    <a href="#" data-toggle="dropdown">Войти</a>
+                                    <div class="dropdown-menu dropdown-login" style="padding:15px;min-width:250px">
+                                        <form>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon addon-login"><i
+                                                            class="fa fa-user"></i></span>
+                                                    <input type="text" placeholder="Username or email"
+                                                        required="required" class="form-control input-login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon addon-login"><i
+                                                            class="addon fa fa-lock"></i></span>
+                                                    <input type="password" placeholder="Password" required="required"
+                                                        class="form-control input-login">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label class="string optional" for="user_remember_me">
+                                                        <input type="checkbox" id="user_remember_me" style="">
+                                                        Запомнить
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <input type="submit" class="btn btn-custom btn-block" value="Sign In">
+                                            <a href="forgot_password.html" class="btn-block text-center">Забыли
+                                                пароль?</a>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-group">
+                                        <button class="btn btn-custom btn-xs" type="button">Страна</button>
+                                        <button data-toggle="dropdown" class="btn btn-custom btn-xs dropdown-toggle"
+                                            type="button">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Переключатель</span>
+                                        </button>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li><a href="#">Россия</a></li>
+                                            <li><a href="#">Япония</a></li>
+                                            <li><a href="#">Испания</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="header-top-social">
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-navbar">
+                <div class="navbar main-navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-responsive-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <div class="logo">
+                                    <img src="assets/main/img/general/logo.png" alt="" class="img-responsive hidden-xs">
+                                    <img src="assets/main/img/general/small-logo.png" alt=""
+                                        class="img-responsive mini-logo hidden-lg hidden-sm hidden-md">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse navbar-responsive-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="index.html">Главная</a></li>
+                                <li>
+                                    <a href="#">Номера <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="room_list.html">Гостевой дом</a></li>
+                                        <li><a href="room_grid.html">Пляжный домик</a></li>
+                                        <li><a href="post_single.html">Пенсионат</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Бронирование <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="book_new.html">Забронировать</a></li>
+                                        <li><a href="book_confirmation.html">Подтвердить</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Страницы <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="about.html">О нас</a></li>
+                                        <li>
+                                            <a href="#">Наши партнеры <i class="caret"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="404.html">Ошибка 404</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="signup.html">Регистрация</a></li>
+                                        <li><a href="signin.html">Войти</a></li>
+                                        <li><a href="contact.html">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Новости <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="post_list.html">Новость 1</a></li>
+                                        <li><a href="post_grid.html">Новость 2</a></li>
+                                        <li><a href="post_single.html">Новость 3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Галерея <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="gallery.html">Фото</a></li>
+                                        <li><a href="gallery_detail.html">Видео</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="content-wrapper">
+            <div class="content-header">
+                <div class="container">
+                    <div class="content-header-inner">
+                        <h2>Новости</h2>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Главная</a></li>
+                            <li>Новости </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-inner blog-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="box-post">
+                                <div class="box-post-img">
+                                    <a href="post_single.html"><img src="assets/main/img/general/3.jpg" alt=""
+                                            class="img-responsive" /></a>
+                                </div>
+                                <div class="box-post-body">
+                                    <div class="box-post-header">
+                                        <h3 class="box-post-title pull-left">Рыночный мониторинг активности</h3>
+                                        <span class="date pull-right">16 августа 2030</span>
+                                    </div>
+                                    <div class="box-post-entry">
+                                        <div class="box-post-meta">
+                                            <ul>
+                                                <li><i class="fa fa-user"></i><a href="#"> Олег Петров</a></li>
+                                                <li><i class="fa fa-tags"></i><a href="#">Путешествия</a>, <a
+                                                        href="#">Образ Жизни</a></li>
+                                                <li><i class="fa fa-comments"></i> <a href="#">3 комментария</a></li>
+                                            </ul>
+                                        </div>
+                                        <p>Тем не менее, искусство медиапланирования ускоряет медиавес. Партисипативное
+                                            планирование охватывает повседневный клиентский спрос, невзирая на действия
+                                            конкурентов. </p>
+                                        <p>
+                                            Согласно последним исследованиям, изменение глобальной стратегии искажает
+                                            стратегический медиавес, учитывая результат предыдущих медиа-кампаний. Тем
+                                            не менее, искусство медиапланирования ускоряет медиавес. Партисипативное
+                                            планирование охватывает повседневный клиентский спрос, невзирая на действия
+                                            конкурентов.
+                                        </p>
+                                        <p>Тем не менее, искусство медиапланирования ускоряет медиавес. Партисипативное
+                                            планирование охватывает повседневный клиентский спрос, невзирая на действия
+                                            конкурентов. </p>
+                                    </div>
+                                    <div class="post-share">
+                                        <div class="row">
+                                            <div class="col-xs-2">
+                                                <span>Поделиться</span>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div class="social-share">
+                                                    <ul>
+                                                        <li><a href="#" data-toggle="tooltip"
+                                                                data-original-title="Twitter"><i
+                                                                    class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip"
+                                                                data-original-title="Facebook"><i
+                                                                    class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip"
+                                                                data-original-title="Google Plus"><i
+                                                                    class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip"
+                                                                data-original-title="Pinterest"><i
+                                                                    class="fa fa-pinterest"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip"
+                                                                data-original-title="Linked In"><i
+                                                                    class="fa fa-linkedin"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip"
+                                                                data-original-title="Email"><i
+                                                                    class="fa fa-envelope-o"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-author">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <a href="#"><img src="assets/main/img/people/2.jpg" alt=""
+                                                        class="author-avatar img-responsive"></a>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <div class="author-description">
+                                                    <a href="#">
+                                                        <h3>Олег Петров</h3>
+                                                    </a>
+                                                    <p>
+                                                        Партисипативное планирование охватывает повседневный клиентский
+                                                        спрос, невзирая на действия конкурентов.
+                                                    </p>
+                                                    <ul class="author-socmed">
+                                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#comments">
+                                        <h3 class="box-post-title">8 комментариев</h3>
+                                    </a>
+                                    <div class="comment-list-wrapper" id="comments">
+                                        <ul class="comment-list">
+                                            <li>
+                                                <div class="clearfix comment-inner">
+                                                    <div class="left comment-img">
+                                                        <a href="#"><img alt="" src="assets/main/img/people/4.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class=" comment-content">
+                                                        <div class="comment-meta">
+                                                            <p class="author"><a href="#">Пользователь</a>
+                                                                <span>говорит:</span>
+                                                            </p>
+                                                            <p class="date">15 августа 2030 года в 07.50 утра</p>
+                                                            <a class="tooltips reply-btn" data-toggle="tooltip"
+                                                                data-placement="top" title="Reply"
+                                                                href="#reply-comment"><i class="fa fa-reply"></i></a>
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <p>Тем не менее, искусство медиапланирования ускоряет
+                                                                медиавес. Партисипативное планирование охватывает
+                                                                повседневный клиентский спрос, невзирая на действия
+                                                                конкурентов. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <ul class="comment-list">
+                                                    <li>
+                                                        <div class="clearfix comment-inner">
+                                                            <div class="left comment-img">
+                                                                <a href="#"><img alt=""
+                                                                        src="assets/main/img/people/1.jpg">
+                                                                </a>
+                                                            </div>
+                                                            <div class=" comment-content">
+                                                                <div class="comment-meta">
+                                                                    <p class="author"><a href="#">Пользователь</a>
+                                                                        <span>говорит:</span>
+                                                                    </p>
+                                                                    <p class="date">15 августа 2030 года в 07.50 утра
+                                                                    </p>
+                                                                    <a class="tooltips reply-btn" data-toggle="tooltip"
+                                                                        data-placement="top" title="Reply"
+                                                                        href="#reply-comment"><i
+                                                                            class="fa fa-reply"></i></a>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <p>Тем не менее, искусство медиапланирования
+                                                                        ускоряет медиавес. Партисипативное планирование
+                                                                        охватывает повседневный клиентский спрос,
+                                                                        невзирая на действия конкурентов. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="comment-list">
+                                                            <li>
+                                                                <div class="clearfix comment-inner">
+                                                                    <div class="left comment-img">
+                                                                        <a href="#"><img alt=""
+                                                                                src="assets/main/img/people/2.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="comment-content">
+                                                                        <div class="comment-meta">
+                                                                            <p class="author"><a
+                                                                                    href="#">Пользователь</a>
+                                                                                <span>говорит:</span>
+                                                                            </p>
+                                                                            <p class="date">15 августа 2030 года в 07.50
+                                                                                утра</p>
+                                                                            <a class="tooltips reply-btn"
+                                                                                data-toggle="tooltip"
+                                                                                data-placement="top" title="Reply"
+                                                                                href="#reply-comment"><i
+                                                                                    class="fa fa-reply"></i></a>
+                                                                        </div>
+                                                                        <div class="comment-text">
+                                                                            <p>Тем не менее, искусство медиапланирования
+                                                                                ускоряет медиавес. Партисипативное
+                                                                                планирование охватывает повседневный
+                                                                                клиентский спрос, невзирая на действия
+                                                                                конкурентов. </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="clearfix comment-inner">
+                                                    <div class="left comment-img">
+                                                        <a href="#"><img alt="" src="assets/main/img/people/3.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class=" comment-content">
+                                                        <div class="comment-meta">
+                                                            <p class="author"><a href="#">Пользователь</a>
+                                                                <span>говорит:</span>
+                                                            </p>
+                                                            <p class="date">15 августа 2030 года в 07.50 утра</p>
+                                                            <a class="tooltips reply-btn" data-toggle="tooltip"
+                                                                data-placement="top" title="Reply"
+                                                                href="#reply-comment"><i class="fa fa-reply"></i></a>
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <p>Тем не менее, искусство медиапланирования ускоряет
+                                                                медиавес. Партисипативное планирование охватывает
+                                                                повседневный клиентский спрос, невзирая на действия
+                                                                конкурентов. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <ul class="comment-list">
+                                                    <li>
+                                                        <div class="clearfix comment-inner">
+                                                            <div class="left comment-img">
+                                                                <a href="#"><img alt=""
+                                                                        src="assets/main/img/people/4.jpg">
+                                                                </a>
+                                                            </div>
+                                                            <div class=" comment-content">
+                                                                <div class="comment-meta">
+                                                                    <p class="author"><a href="#">Пользователь</a>
+                                                                        <span>говорит:</span>
+                                                                    </p>
+                                                                    <p class="date">15 августа 2030 года в 07.50 утра
+                                                                    </p>
+                                                                    <a class="tooltips reply-btn" data-toggle="tooltip"
+                                                                        data-placement="top" title="Reply"
+                                                                        href="#reply-comment"><i
+                                                                            class="fa fa-reply"></i></a>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <p>Тем не менее, искусство медиапланирования
+                                                                        ускоряет медиавес. Партисипативное планирование
+                                                                        охватывает повседневный клиентский спрос,
+                                                                        невзирая на действия конкурентов. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="clearfix comment-inner">
+                                                            <div class="left comment-img">
+                                                                <a href="#"><img alt=""
+                                                                        src="assets/main/img/people/5.jpg">
+                                                                </a>
+                                                            </div>
+                                                            <div class=" comment-content">
+                                                                <div class="comment-meta">
+                                                                    <p class="author"><a href="#">Пользователь</a>
+                                                                        <span>говорит:</span>
+                                                                    </p>
+                                                                    <p class="date">15 августа 2030 года в 07.50 утра
+                                                                    </p>
+                                                                    <a class="tooltips reply-btn" data-toggle="tooltip"
+                                                                        data-placement="top" title="Reply"
+                                                                        href="#reply-comment"><i
+                                                                            class="fa fa-reply"></i></a>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <p>Тем не менее, искусство медиапланирования
+                                                                        ускоряет медиавес. Партисипативное планирование
+                                                                        охватывает повседневный клиентский спрос,
+                                                                        невзирая на действия конкурентов. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="clearfix comment-inner">
+                                                    <div class="left comment-img">
+                                                        <a href="#"><img alt="" src="assets/main/img/people/1.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class=" comment-content">
+                                                        <div class="comment-meta">
+                                                            <p class="author"><a href="#">Пользователь</a>
+                                                                <span>говорит:</span>
+                                                            </p>
+                                                            <p class="date">15 августа 2030 года в 07.50 утра</p>
+                                                            <a class="tooltips reply-btn" data-toggle="tooltip"
+                                                                data-placement="top" title="Reply"
+                                                                href="#reply-comment"><i class="fa fa-reply"></i></a>
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <p>Тем не менее, искусство медиапланирования ускоряет
+                                                                медиавес. Партисипативное планирование охватывает
+                                                                повседневный клиентский спрос, невзирая на действия
+                                                                конкурентов. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="clearfix comment-inner">
+                                                    <div class="left comment-img">
+                                                        <a href="#"><img alt="" src="assets/main/img/people/5.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class=" comment-content">
+                                                        <div class="comment-meta">
+                                                            <p class="author"><a href="#">Пользователь</a>
+                                                                <span>говорит:</span>
+                                                            </p>
+                                                            <p class="date">15 августа 2030 года в 07.50 утра</p>
+                                                            <a class="tooltips reply-btn" data-toggle="tooltip"
+                                                                data-placement="top" title="Reply"
+                                                                href="#reply-comment"><i class="fa fa-reply"></i></a>
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <p>Тем не менее, искусство медиапланирования ускоряет
+                                                                медиавес. Партисипативное планирование охватывает
+                                                                повседневный клиентский спрос, невзирая на действия
+                                                                конкурентов. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#reply-comment">
+                                        <h3 class="box-post-title">Прокомментировать</h3>
+                                    </a>
+                                    <div class="comments-form" id="reply-comment">
+                                        <form method="post" class="form-custom">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Название</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="Введите имя">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Электронная почта</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="Введите e-mail">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Тема</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="Обозначьте тему">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Сообщение</label>
+                                                <textarea class="form-control" rows="5"
+                                                    placeholder="Введите текст..."></textarea>
+                                            </div>
+                                            <div class="form-group text-right">
+                                                <button type="submit" class="btn btn-custom">Отправить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog-sidebar">
+                                <div class="blog-sidebar-widget">
+                                    <form class="form-custom blog-search">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Введите запрос..." class="form-control">
+                                        </div>
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                                <div class="blog-sidebar-widget">
+                                    <h3 class="sidebar-widget-title">Категории</h3>
+                                    <div class="box-post">
+                                        <div class="box-post-body widget-category">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Отдых (23) </a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Развлечения
+                                                        (67)</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Природа
+                                                        (13)</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Спорт (25)</a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Здоровье &amp;
+                                                        Жизнь (23)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-sidebar-widget">
+                                    <h3 class="sidebar-widget-title">Архивы</h3>
+                                    <div class="box-post">
+                                        <div class="box-post-body widget-category">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Март 2030 (23)
+                                                    </a></li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Апрель 2030
+                                                        (67)</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Май, 2030
+                                                        (13)</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Июнь 2030
+                                                        (25)</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Июль, 2030
+                                                        (23)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-sidebar-widget">
+                                    <h3 class="sidebar-widget-title">Теги</h3>
+                                    <div class="widget-tags">
+                                        <a class="tags" href="#">Пляж</a>
+                                        <a class="tags" href="#">Отель</a>
+                                        <a class="tags" href="#">Горячие предложения</a>
+                                        <a class="tags" href="#">Гостевой дом</a>
+                                        <a class="tags" href="#">Пляжный домик</a>
+                                        <a class="tags" href="#">Праздник</a>
+                                        <a class="tags" href="#">Путешествия</a>
+                                        <a class="tags" href="#">Пенсионат</a>
+                                        <a class="tags" href="#">Ami</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <!--FOOTER WIDGETS-->
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="widget">
+                                <div class="widget-content">
+                                    <h5>Ami</h5>
+                                    <div class="footer-logo">
+                                        <a href="index.html" class="logo">
+                                            <h1>Шаблон<span> HTML 5</span></h1>
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Адаптивный шаблон HTML 5 для гостиниц, отелей, хостелов и гостевых домов
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="widget">
+                                <div class="widget-content address">
+                                    <h5>Адрес</h5>
+                                    <!--CONTACT INFO-->
+                                    <p><strong> Ami</strong><br />
+                                        г.Москва, ул.Ивановых, 1<br />
+                                        Россия
+                                    </p>
+                                    <span><i class="fa fa-phone"></i> +7 987 654 33 21</span><br />
+                                    <span><i class="fa fa-envelope-o"></i> ami@email.ru</span><br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget">
+                                <div class="widget-content">
+                                    <h5>Ссылки</h5>
+                                    <ul>
+                                        <li><a href="signup.html">Регистрация</a></li>
+                                        <li><a href="signin.html">Войти</a></li>
+                                        <li><a href="#">Бронь</a></li>
+                                        <li><a href="contact.html">Обратная связь</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget last">
+                                <div class="widget-content">
+                                    <h5>Информация</h5>
+                                    <p>Тем не менее, искусство медиапланирования ускоряет медиавес. Партисипативное
+                                        планирование охватывает повседневный клиентский спрос, невзирая на действия
+                                        конкурентов.</p>
+                                    <div class="form-group">
+                                        <input name="email" required type="text" placeholder="Введите E-mail" class="form-control">
+                                    </div>
+                                    <button class="btn btn-custom" type="submit">Подписка </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="main-footer-inner">
+                        <div class="copyright">
+                            © 2030 <a href="index.html">Ami</a> Адаптивный шаблон HTML 5 для гостиниц, отелей, хостелов
+                            и гостевых домов
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="#">Бронь</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <a id="toTop" href="#" class="btn-back-top btn-custom" data-toggle="tooltip" data-placement="top" title="Вверх"><i
+            class="fa fa-angle-up"></i></a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/plugins/jquery/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="assets/plugins/flexslider/jquery.flexslider.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="assets/plugins/smartmenus/jquery.smartmenus.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="assets/plugins/smartmenus/addons/bootstrap/jquery.smartmenus.bootstrap.js">
+    </script>
+    <!-- Shuffle Plugin-->
+    <script src="assets/plugins/shuffle/jquery.shuffle.min.js"></script>
+    <script src="assets/main/js/shuffle_init.js"></script>
+    <!-- CountDown -->
+    <script src="assets/plugins/countdown/jquery.countdown.js"></script>
+
+    <!-- Bootstrap Select -->
+    <script src="assets/plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+    <!-- Bootstrap DatePicker -->
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.ru.min.js"></script>
+
+    <!-- Google Map-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript" src="assets/main/js/main.js"></script>
+    <script type="text/javascript" src="assets/main/js/style-option.js"></script>
+</body>
+
+</html>

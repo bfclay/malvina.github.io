@@ -1,0 +1,268 @@
+/* -----------------------------
+
+Global Style
+
+-------------------------------- */
+
+
+a{
+	color: #111111;
+}
+
+a:hover{
+	color: #563D7C !important;
+}
+
+
+.boxed-wrapper{
+	border: 1px solid #D3D3D3;
+}
+
+.wide-wrapper{
+
+}
+
+.flex-direction-nav a::before{
+	color: #563D7C !important;
+}
+
+.published-date, .comments-icon{
+	color: #AAA;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.btn-custom, a.btn-custom{
+	background-color: #563D7C !important;
+	color: rgba(255,255,255,0.8) !important;
+	text-transform: uppercase;
+}
+
+.btn-custom:hover, a.btn-custom:hover{
+	background-color: #FFC235 !important;
+	color: #FFF;
+}
+
+.color-text{
+	color: #563D7C;
+}
+
+.form-control:focus{
+	border-color: #563D7C;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover{
+	border-color: #563D7C;
+	background: #563D7C;
+	color: #FFF !important;
+}
+
+.pagination > li > a, .pagination > li > span{
+	color: #563D7C;
+}
+
+
+/* -----------------------------
+
+Header and Navbar
+
+-------------------------------- */
+.header-main{
+	background: #FFF;
+}
+
+.header-main h1, .footer-logo h1{
+	color: #000;
+	text-shadow : 0 1px 1px #555;
+}
+
+.header-main h1 span, .footer-logo h1 span, .logo-wrapper h1 span{
+	color: #563D7C;
+}
+
+.main-navbar .navbar-brand{
+	color: #333;
+}
+
+.main-navbar .navbar-brand:hover{
+	color: #444;
+}
+
+.main-navbar > .navbar-nav > li > a :hover{
+	color: #FFF !important;
+}
+
+.main-navbar.navbar ul li a{
+	color: #333;
+}
+
+.main-navbar.navbar ul li a:hover{
+	color: #FFF !important;
+}
+
+.main-navbar .dropdown-menu a{
+	color: #333 !important;
+}
+
+.main-navbar .dropdown-menu a:hover{
+	color: #563D7C !important;
+}
+
+.main-navbar .dropdown-menu > li > a:hover, .main-navbar .dropdown-menu > li > a:focus{
+	background-color: #563D7C;
+}
+
+
+
+.main-navbar .nav > li > a:focus, .main-navbar .nav > li > a:hover, .main-navbar .nav > li.open > a, .main-navbar .nav > li.active > a{
+	background: #563D7C;
+	color: #FFF;
+}
+
+.main-navbar .nav > li > a.search-btn, .main-navbar .nav > li > a.search-btn-close{
+	background: transparent;
+}
+
+.main-navbar .nav .open > a, .main-navbar .nav .open > a:focus, .main-navbar .nav .open > a:hover{
+	background: #563D7C;
+}
+
+.main-navbar a.highlighted{
+	color: #FFF !important;
+}
+
+
+@media(min-width:900px) {
+	.main-navbar .dropdown-menu > li > a{
+		border-bottom: 1px solid #EEE;
+	}
+}
+
+@media(max-width: 768px){
+	.main-navbar .dropdown-menu li > a:hover{
+		background: #FFC235;
+		color: #FFF !important;
+	}
+}
+
+/*-----------------------------
+
+Home Slider
+
+-------------------------------*/
+.home-slider .caption-wrapper h2{
+	color: #563D7C;
+}
+
+.slide-price{
+	background: #563D7C;
+}
+
+.home-slider .caption-inner a{
+	color: #563D7C;
+}
+
+/*-----------------------------
+
+Main Page
+
+------------------------------*/
+
+.content-header{
+	background: #563D7C;
+}
+.box:hover{
+	border-color: #563D7C;
+	box-shadow: 0 4px 1px rgba(247,168,27, 0.3);
+	-moz-box-shadow: 0 4px 1px rgba(247,168,27, 0.3);
+	-webkit-box-shadow: 0 4px 1px rgba(247,168,27, 0.3);
+}
+
+.box-price{
+	background: rgba(247,168,27, 0.8);
+}
+
+.datepicker td.selected.active{
+	background-color: #563D7C !important;
+	border-color: #FFC235 !important;
+}
+
+.datepicker table tr th{
+	color: #563D7C;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+#testi .testi-overlay{
+	background: rgba(247,168,27, 0.5);
+}
+
+#bx-pager .thumb-item-link:focus {
+    -webkit-box-shadow: 0 0 2px #563D7C;
+    -moz-box-shadow: 0 0 2px #563D7C;
+    box-shadow: 0 0 2px #563D7C;
+    outline: none;
+}
+#bx-pager .thumb-item-link.active {
+    border-bottom: 4px solid #563D7C;
+}
+
+
+.room-detail .table td i{
+	color: #563D7C;
+	margin-right: 5px;
+}
+
+
+.booking-wrapper .nav-tabs > li.active > a, .booking-wrapper .nav-tabs > li.active > a:focus{
+	border-bottom: 3px solid #563D7C;
+	color: #563D7C;
+}
+
+.booking-wrapper .nav-tabs > li.active  .step{
+	background-color: #563D7C;
+	border: 1px solid #563D7C;
+	color: #FFF;
+}
+
+
+.box-person-overlay{
+	background: rgba(247,168,27, 0.8);
+}
+
+
+.abs-date{
+	background: rgba(247,168,27, 0.8);
+}
+
+.search-form .bootstrap-select.open .btn{
+	border-color: #563D7C;
+	background: transparent;
+	color: rgba(255,255,255,0.8);
+}
+
+/*--------------------------------
+
+Gallery
+
+---------------------------------*/
+
+.portfolio-sorting li a:hover,
+.portfolio-sorting li a.active
+{
+	color: #563D7C;
+	border-bottom: 2px solid #563D7C;
+}
+
+
+/* -----------------------------
+
+Footer
+
+-------------------------------- */
+
+
+
+#footer a{
+	color: rgba(255,255,255,0.8) !important;
+}
